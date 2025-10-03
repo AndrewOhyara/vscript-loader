@@ -14,7 +14,7 @@ Supported games: TF2, CSS, DODS, HL2DM, HLSDM and any TF2 branch engine game.
 - [TODO list](#todo-list)
 
 ## Installation
-1. Download this repository and move it to: <game_folder>/custom
+1. Download "vscript_loader.zip" from Releases and extract it in: <game_folder>/custom
 
 ## Files
 - mapsapwn.nut -> The loader script. Runs at every map load.
