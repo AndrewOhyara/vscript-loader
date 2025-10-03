@@ -13,7 +13,7 @@ g_VscriptFileList <- {                          // List of vscript files
     default_data = []   // All scripts will be added here.
     round_only = []     // round-only scripts are added here.
 }         
-g_VscriptScopedScripts <- {};                   // Scoped scripts will be referenced here by it's path if 'scope' is not null, root or g_MapVScript scope
+g_VscriptScopedScripts <- {};                   // Scoped scripts will be referenced here by its path if 'scope' is not null, root or g_MapVScript scope
 g_MapVScript <- {}                              // Scope for round-only scripts (like l4d2's director_base_addon).
 
 // ---------------------------------------------------------------------
@@ -241,7 +241,7 @@ if (!("VscriptLoader" in this) || VscriptLoader.Version < vsloader_version)
                 }
                 else
                 {
-                    errorl("[VSCRIPT LOADER] Couldn't load file " + path + " (Order in list: " + g_VscriptFileOrder + ")\n");
+                    errorl("[VSCRIPT LOADER] Couldn't load file " + path + " (Order in list: " + g_VscriptFileOrder + ")");
                 }
                 g_VscriptFileOrder++;
             }
@@ -308,7 +308,7 @@ if (!("VscriptLoader" in this) || VscriptLoader.Version < vsloader_version)
                 }
                 else
                 {
-                    errorl("[VSCRIPT LOADER] Couldn't load file " + path + " (Order in list: " + order_in_list + ")\n");
+                    errorl("[VSCRIPT LOADER] Couldn't load file " + path + " (Order in list: " + order_in_list + ")");
                 }
                 round_only_order++;
             }
@@ -423,6 +423,7 @@ if (!("Events" in VscriptLoader))
 }
 __CollectGameEventCallbacks(VscriptLoader.Events);
 VscriptLoader.Init();
+
 
 
 
