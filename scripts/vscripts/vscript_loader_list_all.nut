@@ -5,7 +5,7 @@
 // You can add as many scripts you want.
 // The list shouldn't be loaded manually.
 // ================================================================
-Msg("[VSCRIPT LOADER] Loading vscript file list from " + __FILE__ + "\n");
+Msg("[VSCRIPT LOADER] Loading vscript file list from " + __FILE__ + "\n");    // OPTIONAL
 
 // OPTIONAL: The ID for the list. Can be any value. Use it when you want to detect any overrides from the custom or vscripts folder.
 g_VscriptListId <- "my_default_list_v1"; 
@@ -14,7 +14,7 @@ g_VscriptListId <- "my_default_list_v1";
 g_iVscriptFileLoadMax <- 256;   
 
 
-// EXAMPLE - If "dummy_script_tob_load" doesn't exist, it will return an exception and continue with the list.
+// EXAMPLE - If "dummy_script_tob_load" doesn't exist, it will return an error message and continue with the list.
 VscriptLoader.AddScript({
     path = "dummy_script_tob_load" 
     scope = null 
@@ -52,4 +52,5 @@ VscriptLoader.AddScript({
     // If 'scope' is g_MapVScript or contains a string with 'mapscript', then round_only is set to true
     scope = g_MapVScript    
     round_only = false
+
 })
