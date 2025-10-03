@@ -127,7 +127,7 @@ is in g_MapVScript scope: true
 
 ## Notes
 - If you have another mapspawn.nut file, to avoid conflicts, copy the contents to this mapspawn and paste it into your mapspawn file.
-- "round-only" scripts are loaded in g_MapVScript scope. Use g_MapScript.<your_table> (eg. g_MapVScript.MyScriptExample)
+- "round-only" scripts are loaded in the g_MapVScript scope. Use g_MapScript.<your_table> (eg. g_MapVScript.MyScriptExample)
 - You can set the limit of maximum loads in the list file.
 
 ## TODO list
