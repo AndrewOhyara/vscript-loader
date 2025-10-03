@@ -19,6 +19,7 @@ Supported games: TF2, CSS, DODS, HL2DM, HLSDM and any TF2 branch engine game.
 ## Files
 - mapsapwn.nut -> The loader script. Runs at every map load.
 - vscript_file_list_all.nut -> The vscript list you can edit.
+- dummy_temp.nut -> A simple test script file.
 
 ## Global Variables
 ```squirrel
