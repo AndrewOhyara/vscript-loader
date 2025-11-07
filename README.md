@@ -11,7 +11,6 @@ Supported games: TF2, CSS, DODS, HL2DM, HLDMS and any TF2 branch engine game.
 - [Global variables](#global-variables)
 - [Vscript file list](#vscript-list-file)
 - [Notes](#notes)
-- [TODO list](#todo-list)
 
 ## Installation
 1. Download "vscript_loader.zip" from Releases and extract it in: <game_folder>/custom
