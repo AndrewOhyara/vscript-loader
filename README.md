@@ -3,7 +3,7 @@ A simple loader for vscript files for those game that don't have the l4d2's buil
 
 Runs at map spawn and between rounds. Includes a table for scoped scripts.
 
-Supported games: TF2, CSS, DODS, HL2DM, HLSDM and any TF2 branch engine game.
+Supported games: TF2, CSS, DODS, HL2DM, HLDMS and any TF2 branch engine game.
 
 # Index
 - [Installation](#installation)
@@ -90,7 +90,7 @@ VscriptLoader.AddScript({
 })
 
 /*
-The console may print something like this (Example in CSS):
+The console may print something like this (Example in CS:S):
 ==========================================================================================
 VSCRIPT: Initializing VSCRIPT LOADER. Version: 1
 [VSCRIPT LOADER] Loading vscript file list from vscript_loader_list_all.nut
@@ -126,9 +126,7 @@ is in g_MapVScript scope: true
 ```
 
 ## Notes
-- If you have another mapspawn.nut file, to avoid conflicts, copy the contents to this mapspawn and paste it into your mapspawn file.
-- "round-only" scripts are loaded in the g_MapVScript scope. Use g_MapScript.<your_table> (eg. g_MapVScript.MyScriptExample)
+- If you have another mapspawn.nut file, to avoid conflicts, copy the contents from this mapspawn and paste it into your mapspawn file.
+- "round-only" scripts are loaded in the g_MapVScript scope. Use g_MapVScript.<your_table> (eg. g_MapVScript.MyScriptExample)
 - You can set the limit of maximum loads in the list file.
-
-## TODO list
-- Waiting for feedback
+- Half-Life Deathmatch: Source doesn't have rounds making round-only scripts useless.
